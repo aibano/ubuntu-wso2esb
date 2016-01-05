@@ -18,8 +18,4 @@ RUN wget -P /opt --user-agent="testuser" --referer="http://connect.wso2.com/wso2
 # Expose the ports
 EXPOSE 9443 9763 8243 8289
 
-# Set volume mount points for repository directory. Changes to the
-# repository directory needs to be persisted.
-# VOLUME ["/opt/wso2esb-4.9.0/repository"]
-
 ENTRYPOINT ["/opt/wso2esb-4.9.0/bin/wso2server.sh"]
